@@ -4,8 +4,14 @@ var fn=function(){
     var age=30;
     var  num=22;
     console.log('this is a fun in global context');
-    function fn(num)
+    function fn2()
     {
-        console.log('this is funtion within a fn funtion')
+        console.log('this is funtion within a fn funtion') 
+        console.log(num);
+        var newnum=23;
+
     }
+    fn2()
+
 }
+fn();
